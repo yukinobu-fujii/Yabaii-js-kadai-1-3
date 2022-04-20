@@ -14,8 +14,8 @@ let taskNames = [
 taskNames.forEach(function( value ) {
      console.log( value );
 });
-taskNames.push(prompt('「確認、追加、削除、終了」のいずれかを入力してください');
-);
+prompt('「確認、追加、削除、終了」のいずれかを入力してください');
+
 /*
 let alltaskNames = taskNames.map(taskName=> {
   return taskName

@@ -1,20 +1,31 @@
 
-function nametask() {
+const task = function taskMenu() {
     console.log('==========================')
     console.log('現在持っているのタスク一覧')
     console.log('==========================')
 }
-nametask();
+task();
 
 let taskNames = [
     '掃除',
     '買い物',
-    '徒歩',];
- 
-taskNames.forEach(function( value ) {
-     console.log( value );
-});
-prompt('「確認、追加、削除、終了」のいずれかを入力してください');
+    '徒歩',
+];
+const task_names = function taskMenu() {
+    taskNames.forEach(function( value ) {
+        console.log( value );
+    });
+}
+task_names();
+while(true){
+    if(taskNames.push(prompt('「確認、追加、削除、終了」のいずれかを入力してください')));
+    {
+        task();
+        task_names();
+        alert(`新しいタスクを追加しました。`);
+        break;
+    }
+}
 
 /*
 let alltaskNames = taskNames.map(taskName=> {

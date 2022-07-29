@@ -17,7 +17,7 @@ const taskShow = () => {
 }
 taskShow();
 while(true){
-    if(taskNames.push(prompt('「確認、追加、削除、終了」のいずれかを入力してください')));
+    if(taskNames.push(prompt('タスクを入力してください')));
     {
         console.log( taskMenu.join('\n') );
         taskShow();
